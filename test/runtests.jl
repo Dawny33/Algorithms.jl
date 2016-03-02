@@ -1,9 +1,6 @@
 using Algorithms
-using SearchingAlgorithms
 using Base.Test
 
-# write your own tests here
-@test 1 == 1
 
 # Tests for SequentialSearch
 a = [1, 2, 3, 4]
