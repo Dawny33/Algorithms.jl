@@ -1,3 +1,4 @@
+using Algorithms
 using SearchingAlgorithms
 using Base.Test
 
