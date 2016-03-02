@@ -1,13 +1,16 @@
-__precompile__()
-
 module Algorithms
 
-import Base: ==, +=, in, length
+  import Base:
+    length,
+    show,
+    AbstractArray
 
-export SequentialSearch
+  export Searching,
+         SequentialSearch
 
 
 # Source Files
 
-include("Searching.jl")
+  include("Searching.jl")
+
 end # module
