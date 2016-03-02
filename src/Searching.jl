@@ -2,6 +2,7 @@
 # Contains implementations for searching algorithms #
 #####################################################
 
+module Searching
 
 function SequentialSearch(x::AbstractArray, item)
   # Searches for an item using the SequentialSearch approach
@@ -20,3 +21,5 @@ function SequentialSearch(x::AbstractArray, item)
 
   return found
 end
+
+end # module
