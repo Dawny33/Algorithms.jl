@@ -3,7 +3,8 @@ module Algorithms
   import Base:
     length,
     show,
-    AbstractArray
+    AbstractArray,
+    fld
 
   export Searching,
          seqsearch,

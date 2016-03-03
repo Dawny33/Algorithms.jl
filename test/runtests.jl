@@ -14,3 +14,7 @@ item = 4
 # Tests for ordseqsearch
 @test ordseqsearch(a, 4) == true
 @test ordseqsearch(b, 4) == false
+
+# Tests for binarysearch
+@test binarysearch(a, 4) == true
+@test binarysearch(b, 4) == false

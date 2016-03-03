@@ -35,3 +35,32 @@ function ordseqsearch{T}(x::AbstractArray{T}, item::T)
 
   return found
 end
+
+
+"""
+`binarysearch{T}::(x::AbstractArray(T), item::T) ↦ found::Bool`
+
+Searches for an item in a sorted array using the **Binary Search** algorithm
+"""
+function binarysearch{T}(x::AbstractArray{T}, item::T)
+  first = 1
+  last = length(x)
+  found = false
+
+  while first <= last && !found
+    middle = fld(first+last, 2)
+
+    if middle == item
+      found = true
+    else
+      if item > middle
+        first = middle + 1
+      else
+        last = middle - 1
+      end
+    end
+
+  end
+
+  return found
+end
