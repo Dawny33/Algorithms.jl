@@ -8,7 +8,8 @@ module Algorithms
 
   export Searching,
          seqsearch,
-         ordseqsearch
+         ordseqsearch,
+         binarysearch
 
 
 # Source Files
