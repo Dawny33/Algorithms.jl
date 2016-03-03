@@ -6,7 +6,8 @@ module Algorithms
     AbstractArray
 
   export Searching,
-         SequentialSearch
+         seqsearch,
+         ordseqsearch
 
 
 # Source Files
