@@ -19,3 +19,4 @@ function SequentialSearch(x::AbstractArray, item)
   end
 
   return found
+end
