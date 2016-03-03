@@ -13,7 +13,7 @@ Algorithms is an API for common algorithms.  The package would aim to be:
 
 - **Universal** Serve as a one-stop library for implementation of common algorithms both in competitive programming, competitive data science and production
 - **Lightweight** Have the minimal possible dependencies, which makes it super easy and lightweight to use
-- **Intuitive** Use the API without worrying about the naming convention, and make the package very less documentation dependant.
+- **Intuitive** Use the API without worrying about the naming convention, and make the package very less documentation dependent.
 
 
 
