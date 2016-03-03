@@ -50,7 +50,7 @@ function binarysearch{T}(x::AbstractArray{T}, item::T)
   while first <= last && !found
     middle = fld(first+last, 2)
 
-    if middle == item
+    if x[middle] == item
       found = true
     else
       if item > middle
