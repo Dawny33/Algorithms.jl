@@ -10,7 +10,8 @@ module Algorithms
          Sorting,
          seqsearch,
          ordseqsearch,
-         binarysearch
+         binarysearch,
+         insertsort!
 
 
 # Source Files

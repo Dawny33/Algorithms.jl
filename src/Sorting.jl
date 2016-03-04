@@ -3,7 +3,7 @@
 ###################################################
 
 """
-`insertsort!{T}(x::AbstractArray{T})` ↦
+`insertsort!{T}(x::AbstractArray{T})` ↦ x::AbstractArray
 
 Sorts an array using the **Insertion Sort** approach.
 """
