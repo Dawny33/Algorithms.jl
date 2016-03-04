@@ -7,6 +7,7 @@ module Algorithms
     fld
 
   export Searching,
+         Sorting,
          seqsearch,
          ordseqsearch,
          binarysearch
@@ -15,5 +16,6 @@ module Algorithms
 # Source Files
 
   include("Searching.jl")
+  include("Sorting.jl")
 
 end # module

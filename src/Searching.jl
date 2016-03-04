@@ -3,7 +3,7 @@
 #####################################################
 
 """
-`seqsearch{T}(x::AbstractArray{T}, item::T)` ↦ found::Bool
+`seqsearch{T}(x::AbstractArray{T}, item::T) ↦ found::Bool`
 
 Searches for an item using the **Sequential Search** approach.
 """
