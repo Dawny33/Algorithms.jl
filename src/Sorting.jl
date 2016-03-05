@@ -58,3 +58,28 @@ function bubblesort!{T}(x::AbstractArray{T})
 
   return x
 end
+
+
+"""
+`selectionsort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
+
+Sorts an array using the **Selection Sort** approach.
+"""
+function selectionsort!{T}(x::AbstractArray{T})
+
+  for i in 1:length(x)-1
+    iMin = i
+
+    for j in i+1:length(x)
+      if x[j] < x[iMin]
+        iMin = j
+      end
+    end
+
+    if iMin != i
+      swap!(x, i, iMin)
+    end
+  end
+
+  return x
+end
