@@ -51,7 +51,7 @@ function bubblesort!{T}(x::AbstractArray{T})
   for i in 2:length(x)
     for j in 1:length(x)-1
       if x[j] > x[j+1]
-        swap!(a, x[j], x[j+1])
+        swap!(x, j, j+1)
       end
     end
   end
