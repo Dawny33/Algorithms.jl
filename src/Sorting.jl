@@ -3,7 +3,20 @@
 ###################################################
 
 """
-`insertsort!{T}(x::AbstractArray{T})` ↦ x::AbstractArray
+The swapping function implementation
+"""
+function swap!{T}(x::AbstractArray{T}, a::T, b::T)
+
+  tmp = x[a]
+  x[a] = x[b]
+  x[b] = tmp
+  return x
+
+end
+
+
+"""
+`insertsort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
 
 Sorts an array using the **Insertion Sort** approach.
 """
@@ -22,6 +35,25 @@ function insertsort!{T}(x::AbstractArray{T})
 
     x[position] = current
 
+  end
+
+  return x
+end
+
+
+"""
+`bubblesort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
+
+Sorts an array using the **Bubble Sort** approach.
+"""
+function bubblesort!{T}(x::AbstractArray{T})
+
+  for i in 2:length(x)
+    for j in 1:length(x)-1
+      if x[j] > x[j+1]
+        swap!(a, x[j], x[j+1])
+      end
+    end
   end
 
   return x

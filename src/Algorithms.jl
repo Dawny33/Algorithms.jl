@@ -11,7 +11,8 @@ module Algorithms
          seqsearch,
          ordseqsearch,
          binarysearch,
-         insertsort!
+         insertsort!,
+         bubblesort!
 
 
 # Source Files

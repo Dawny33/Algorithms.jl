@@ -25,3 +25,6 @@ c = [23, 12, 17, 88, 90, 26, 34, 129]
 
 # Tests for insertsort!
 @test insertsort!(c) == [12,17,23,26,34,88,90,129]
+
+# Tests for bubblesort!
+@test bubblesort!(c) == [12,17,23,26,34,88,90,129]
