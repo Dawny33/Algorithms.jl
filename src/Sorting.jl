@@ -69,16 +69,14 @@ function selectsort!{T}(x::AbstractArray{T})
 
   for i in 1:length(x)-1
     iMin = i
-
     for j in i+1:length(x)
       if x[j] < x[iMin]
         iMin = j
       end
     end
 
-    if iMin != i
-      swap!(x, i, iMin)
-    end
+    swap!(x, i, iMin)
+
   end
 
   return x
