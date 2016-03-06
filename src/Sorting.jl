@@ -76,8 +76,40 @@ function selectsort!{T}(x::AbstractArray{T})
     end
 
     swap!(x, i, iMin)
-
   end
 
   return x
+end
+
+
+"""
+`quicksort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
+
+Sorts an array using the **Quick Sort** approach.
+"""
+function quicksort!{T}(x::AbstractArray{T})
+
+  less    = []
+  equal   = []
+  greater = []
+
+  if length(x) > 0
+    pivot = x[1]
+
+    for i in 1:length(x)
+      if x[i] < pivot
+        push!(less, x[i])
+      elseif x[i] > pivot
+        push!(greater, x[i])
+      else
+        push!(equal, x[i])
+      end
+    end
+
+
+  return vcat(quicksort!(less), equal, quicksort!(greater))
+
+  else
+    return x
+  end
 end

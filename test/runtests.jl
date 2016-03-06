@@ -31,3 +31,6 @@ c = [23, 12, 17, 88, 90, 26, 34, 129]
 
 # Tests for selectsort!
 @test selectsort!(c) == [12,17,23,26,34,88,90,129]
+
+# Tests for quicksort!
+@test quicksort!(c) == [12,17,23,26,34,88,90,129]

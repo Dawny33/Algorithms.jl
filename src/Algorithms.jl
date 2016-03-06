@@ -4,7 +4,8 @@ module Algorithms
     length,
     show,
     AbstractArray,
-    fld
+    fld,
+    hvcat
 
   export Searching,
          Sorting,
@@ -13,7 +14,8 @@ module Algorithms
          binarysearch,
          insertsort!,
          bubblesort!,
-         selectsort!
+         selectsort!,
+         quicksort!
 
 
 # Source Files
