@@ -61,11 +61,11 @@ end
 
 
 """
-`selectionsort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
+`selectsort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
 
 Sorts an array using the **Selection Sort** approach.
 """
-function selectionsort!{T}(x::AbstractArray{T})
+function selectsort!{T}(x::AbstractArray{T})
 
   for i in 1:length(x)-1
     iMin = i

@@ -13,7 +13,7 @@ module Algorithms
          binarysearch,
          insertsort!,
          bubblesort!,
-         selectionsort!
+         selectsort!
 
 
 # Source Files
