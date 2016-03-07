@@ -1,4 +1,4 @@
-module Algorithms
+module SearchSortAlgos
 
   import Base:
     length,

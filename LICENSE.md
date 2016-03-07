@@ -1,6 +1,6 @@
-The Algorithms.jl package is licensed under the MIT "Expat" License:
+The SearchSortAlgos.jl package is licensed under the MIT "Expat" License:
 
-> Copyright (c) 2016: rohit.raj@kayako.com.
+> Copyright (c) 2016: rajrohit@iitj.ac.in.
 >
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
