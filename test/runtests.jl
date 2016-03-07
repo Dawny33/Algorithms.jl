@@ -16,7 +16,7 @@ end
 
 
 # Items used for testing sort algorithms
-sorts = [:insert, :bubble, :select, :quick]
+sorts = [:insert, :bubble, :select, :quick, merge]
 c = [23, 12, 17, 88, 90, 26, 34, 129]
 
 # Sorting Tests

@@ -15,7 +15,8 @@ module Algorithms
          insertsort!,
          bubblesort!,
          selectsort!,
-         quicksort!
+         quicksort!,
+         mergesort!
 
 
 # Source Files

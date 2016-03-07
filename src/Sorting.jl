@@ -114,3 +114,51 @@ function quicksort!{T}(x::AbstractArray{T}, first::T = 1, last::T = length(x))
 
   return x
 end
+
+
+"""
+`mergesort!{T}(x::AbstractArray{T}) ↦ x::AbstractArray`
+
+Sorts an array using the **Merge Sort** approach.
+"""
+function mergesort!{T}(x::AbstractArray{T})
+
+  if length(x) > 1
+    mid    = div(length(x), 2)
+    left   = mergesort!(x[1:mid])
+    right  = mergesort!(x[mid+1:length(x)])
+    result = Array(eltype(left), length(left) + length(right))
+
+    k = 1
+
+    while length(left) != 0 && length(right) != 0
+      if left[1] <= right[1]
+        result[k] = left[1]
+        left      = left[2:end]
+      else
+        result[k] = right[1]
+        right = right[2:end]
+      end
+      k += 1
+    end
+
+    while length(left) != 0
+      result[k] = left[1]
+      left = left[2:end]
+      k += 1
+    end
+
+    while length(right) != 0
+      result[k] = right[1]
+      right = right[2:end]
+      k += 1
+    end
+
+  for i = 1:length(x)
+    x[i] = result[i]
+  end
+
+  end
+
+  return x
+end
