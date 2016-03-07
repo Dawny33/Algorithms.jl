@@ -14,6 +14,7 @@ for search in searches
 	@eval @test $(symbol(string(search, "search")))(b, 4) == false
 end
 
+
 # Items used for testing sort algorithms
 sorts = [:insert, :bubble, :select, :quick]
 c = [23, 12, 17, 88, 90, 26, 34, 129]

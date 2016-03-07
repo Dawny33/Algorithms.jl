@@ -87,29 +87,30 @@ end
 
 Sorts an array using the **Quick Sort** approach.
 """
-function quicksort!{T}(x::AbstractArray{T})
+function quicksort!{T}(x::AbstractArray{T}, first::T = 1, last::T = length(x))
 
-  less    = []
-  equal   = []
-  greater = []
+  if last > first
 
-  if length(x) > 0
-    pivot = x[1]
+    pivot       = x[first]
+    left, right = first, last
 
-    for i in 1:length(x)
-      if x[i] < pivot
-        push!(less, x[i])
-      elseif x[i] > pivot
-        push!(greater, x[i])
-      else
-        push!(equal, x[i])
+    while left <= right
+      while x[left] < pivot
+        left += 1
+      end
+      while x[right] > pivot
+        right -= 1
+      end
+      if left <= right
+        swap!(x, left, right)
+        left += 1
+        right -= 1
       end
     end
 
-
-  return vcat(quicksort!(less), equal, quicksort!(greater))
-
-  else
-    return x
+    quicksort!(x, first, right)
+    quicksort!(x, left, last)
   end
+
+  return x
 end
