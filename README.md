@@ -1,7 +1,12 @@
 # SearchSortAlgos
 
 
-[![Build Status](https://travis-ci.org/Dawny33/SearchSortAlgos.jl.svg?branch=master)](https://travis-ci.org/Dawny33/SearchSortAlgos.jl) [![Coverage Status](https://coveralls.io/repos/github/Dawny33/SearchSortAlgos.jl/badge.svg?branch=master)](https://coveralls.io/github/Dawny33/SearchSortAlgos.jl?branch=master)
+Linux, OSX: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Build Status](https://travis-ci.org/Dawny33/SearchSortAlgos.jl.svg?branch=master)](https://travis-ci.org/Dawny33/SearchSortAlgos.jl)
+
+Windows: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [![Build status](https://ci.appveyor.com/api/projects/status/3wr75oh1ajw6k0ua?svg=true)](https://ci.appveyor.com/project/Dawny33/searchsortalgos-jl)
+
+
+Code Coverage: &nbsp;&nbsp;&nbsp;&nbsp; [![Coverage Status](https://coveralls.io/repos/github/Dawny33/SearchSortAlgos.jl/badge.svg?branch=master)](https://coveralls.io/github/Dawny33/SearchSortAlgos.jl?branch=master)  [![codecov.io](https://codecov.io/github/Dawny33/SearchSortAlgos.jl/coverage.svg?branch=master)](https://codecov.io/github/Dawny33/SearchSortAlgos.jl?branch=master)
 
 
 

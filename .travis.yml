@@ -16,4 +16,4 @@ notifications:
 after_success:
   - julia -e 'Pkg.add("Coverage")'
   - julia -e 'cd(Pkg.dir("SearchSortAlgos")); using Coverage; Codecov.submit(process_folder())'
-  - julia -e 'cd(Pkg.dir("SearchSortAlgos")); using Coverage; Coveralls.submit(process_folder())
+  - julia -e 'cd(Pkg.dir("SearchSortAlgos")); using Coverage; Coveralls.submit(process_folder())'
